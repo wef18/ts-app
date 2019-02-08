@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/poet/poet",
+    "pages/my/my",
+    "pages/message/message",
+    "pages/detailed/detailed",
+    "pages/search/search",
+    "Component/select/select"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f89c0e",
+    "navigationBarTitleText": "唐诗大全",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#f89c0e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/assets/tabs/home.png",
+        "selectedIconPath": "pages/assets/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "pages/assets/tabs/classify.png",
+        "selectedIconPath": "pages/assets/tabs/classify-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "pages/assets/tabs/message.png",
+        "selectedIconPath": "pages/assets/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/assets/tabs/profile.png",
+        "selectedIconPath": "pages/assets/tabs/profile-active.png"
+      }
+    ]
+  }
+}

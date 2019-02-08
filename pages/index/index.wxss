@@ -1,0 +1,79 @@
+/**index.wxss**/
+/**轮播图**/
+.slider,
+.slider swiper,
+.slider image{
+  height: 300rpx;
+  width: 100%
+}
+.notice{
+  margin: 20rpx;
+}
+.notice .notice_a{
+  color: #f00;
+  font-size: 12px;
+  padding-right: 30rpx;
+}
+.notice .notice_b{
+  color: #666;
+  font-size: 16px;
+}
+.put{
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.put input{
+  /* border: 1px solid #aaa; */
+  /* background: rgba(0,0,0,0.05); */
+  width: 60%;
+  background: #e2eefa;
+  padding: 5rpx 60rpx;
+  padding-right: 110rpx;
+  border-radius: 40rpx;
+  font-size: 14px;
+  font-weight: 100;
+}
+.put .imgs{
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 15rpx;
+}
+.put .input_btn{
+  color: #333;
+  font-size: 14px;
+  padding-left: 20rpx;
+  padding-top: 7rpx
+}
+/* 九宫格 */
+.index_nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav_item{
+  width: 33.33%;
+  height: 200rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.nav_item image{
+  width: 150rpx;
+  height: 150rpx;
+  padding-bottom: 2rpx;
+}
+.option{
+  position: absolute;
+  z-index: 10;
+  color: #666;
+  font-size: 14px;
+  top: 4rpx;
+  right: 100rpx;
+}

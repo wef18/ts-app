@@ -1,0 +1,24 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class='avatar'>
+    <image src='' lazy-load mode='aspectFill'></image>
+  </view>
+  <view class='divider'></view>
+  <view class='cell'>
+    <view class='cell-item arrow'>个人资料</view>
+    <view class='cell-item arrow'>我的优惠券</view>
+  </view>  
+  <view class='divider'></view>
+  <view class='cell'>
+    <view class='cell-item arrow'>常见问题</view>
+    <view class='cell-item arrow'>使用条款</view>
+    <view class='cell-item arrow'>我的钱包</view>
+    <view class='cell-item arrow'>我的客服</view>
+  </view>
+  <view class='divider'></view>
+  <view class='cell'>
+    <view class='cell-item arrow'>检查更新</view>
+    <view class='cell-item arrow'>设置</view>
+  </view>
+  <view class='divider'></view>
+</view>

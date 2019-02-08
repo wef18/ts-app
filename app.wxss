@@ -1,0 +1,35 @@
+/**app.wxss**/
+/* 通用功能一 单行超出指定范围截取内容并添加... */
+.ell{
+  overflow: hidden;  /*超出范围隐藏*/
+  white-space: nowrap; /*不允许换行*/
+  text-overflow: ellipsis;/*超出部分添加...*/
+}
+/* 通用功能二.灰色分割快 */
+.divider{
+  height: 20rpx;
+  background: #f1f1f1;
+}
+/* 通用功能三.项目条 */
+.cell{
+  background: #fff;
+  font-size: 16px;
+}
+.cell-item{
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #ddd;
+}
+/* 通用功能四.箭头 */
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content: "";
+  width: 15rpx;
+  height: 15rpx;
+  border-top: 3rpx solid #aaa;
+  border-right: 3rpx solid #aaa;
+  transform: rotate(45deg);
+}

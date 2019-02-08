@@ -1,0 +1,15 @@
+<view class='classify'>
+  <view class='covering'></view>
+  <view class='condition'>
+    <text class='{{isStyle?"a":""}}' bindtap='demand'>全部</text>
+    <text class='{{sum==index+1?"a":""}}'  wx:for='{{myList.myName}}' wx:key='index' bindtap='demandVal' data-id="{{item.lid}}">{{item.name}}</text>
+    <text></text>
+  </view>
+  <view class='content'>
+    <view class='card' wx:for='{{myData.myPoem}}' wx:key='index' bindtap='handlejump' data-did="{{item.did}}">
+      <image class='card_img' src='http://127.0.0.1:3088/img/{{item.pic}}'></image>
+      <text class='card_title'>{{item.title}}</text>
+      <text class='card_brief ell'>{{item.brief}}</text>
+    </view>
+  </view>
+</view>

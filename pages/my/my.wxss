@@ -1,0 +1,15 @@
+/* pages/my/my.wxss */
+/* 头像 */
+.avatar{
+  background: #f89c0e;
+  height: 350rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar image{
+  width: 190rpx;
+  height: 190rpx;
+  border: 5px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+}

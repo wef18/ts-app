@@ -1,0 +1,25 @@
+/* pages/poet/poet.wxss */
+.poet{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.poet .poet_item{
+  width: 45%;
+  margin: 10rpx 0;
+}
+.poet_item image{
+  width: 300rpx;
+  height: 350rpx;
+}
+.poet_item .item_title{
+  color: #123;
+  font-size: 18px;
+}
+.poet_item .item_name{
+  color: #666;
+  font-size: 14px;
+  text-align: right
+}

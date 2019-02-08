@@ -1,0 +1,40 @@
+/* pages/detailed/detailed.wxss */
+page{
+  background: #dca974;
+}
+.detail,
+.detail .d_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx;
+  /* justify-content: center */
+}
+.detail .d_name{
+  color: #626361;
+  font-size: 18px;
+}
+.detail .d_content{
+  line-height: 55rpx;
+}
+.detail .int{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 0;
+}
+.detail .int .d_int{
+  margin-left: 90rpx;
+  color: #020301;
+  font-size: 16px;
+}
+.detail .d_brief{
+  color: #333;
+  font-size: 16px;
+  text-indent:70rpx;
+  margin-bottom: 20rpx;
+}
+.detail .d_sent{
+  text-indent: 70rpx;
+  font-size: 16px;
+  color: #363636;
+}

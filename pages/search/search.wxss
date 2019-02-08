@@ -1,0 +1,29 @@
+.search{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.search .search_item{
+  width: 45%;
+  margin: 10rpx 0;
+}
+.search_item image{
+  width: 300rpx;
+  height: 350rpx;
+}
+.search_item .item_title{
+  color: #123;
+  font-size: 18px;
+}
+.search_item .item_name{
+  color: #666;
+  font-size: 14px;
+  text-align: right;
+}
+.isnUll{
+  width: 80%;
+  text-align: center;
+  margin: 300rpx auto;
+}

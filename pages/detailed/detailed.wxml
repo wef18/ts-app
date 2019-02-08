@@ -1,0 +1,20 @@
+<view class='detail' wx:for="{{myList}}" wx:key="index">
+  <text class='d_title'>{{item.title}}</text>
+  <text class='d_name'>{{item.name}}</text>
+  <view class='d_content'>
+    <text>{{item.content1}}</text>
+    <text>{{item.content2}}</text>
+    <text>{{item.content3}}</text>
+    <text>{{item.content4}}</text>
+    <text wx:if="{{item.content5}}">{{item.content5}}</text>
+    <text wx:if="{{item.content6}}">{{item.content6}}</text>
+    <text wx:if="{{item.content7}}">{{item.content7}}</text>
+    <text wx:if="{{item.content8}}">{{item.content8}}</text>
+  </view>
+  <view class='int'>
+    <text class='d_text'>译文:</text>
+    <text class='d_int'>{{item.introduce}}</text>
+  </view>
+  <text class='d_brief'>{{item.brief}}</text>
+  <text class='d_sent'>{{item.represent}}</text>
+</view>
