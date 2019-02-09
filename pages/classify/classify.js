@@ -11,11 +11,12 @@ Page({
     myList: {},
     myData: {},
     isStyle: true,
-    sum: 0
+    sum: 0,
+    url: app.globalData.url
   },
   loadMore() {
     wx.request({
-      url: app.globalData.url + '/classify',
+      url: this.data.url + '/classify',
       success: (result) => {
         // console.log(result)
         this.setData({
@@ -27,7 +28,7 @@ Page({
   },
   demand () {
     wx.request({
-      url: app.globalData.url + '/classify/demand',
+      url: this.data.url + '/classify/demand',
       success: (result) => {
         // console.log(result)
         this.setData({
@@ -50,7 +51,7 @@ Page({
     // console.log(e)
     var id = e.target.dataset.id;
     wx.request({
-      url: app.globalData.url + '/classify/demand?id='+id,
+      url: this.data.url + '/classify/demand?id='+id,
       success: (result) => {
         // console.log(result)
         this.setData({

@@ -7,7 +7,7 @@
   </view>
   <view class='content'>
     <view class='card' wx:for='{{myData.myPoem}}' wx:key='index' bindtap='handlejump' data-did="{{item.did}}">
-      <image class='card_img' src='http://127.0.0.1:3088/img/{{item.pic}}'></image>
+      <image class='card_img' src='{{url}}/img/{{item.pic}}'></image>
       <text class='card_title'>{{item.title}}</text>
       <text class='card_brief ell'>{{item.brief}}</text>
     </view>

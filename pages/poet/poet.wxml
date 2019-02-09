@@ -1,6 +1,6 @@
 <view class='poet'>
   <view class='poet_item' wx:for="{{myList}}" wx:key="index">
-    <image src='http://127.0.0.1:3088/img/{{item.pic}}' lazy-load mode='aspectFill' bindtap='handlejump' data-id="{{item.did}}"></image>
+    <image src='{{url}}/img/{{item.pic}}' lazy-load mode='aspectFill' bindtap='handlejump' data-id="{{item.did}}"></image>
     <view class='ell item_title'>《{{item.title}}》</view>
     <view class='item_name'>{{item.name}}</view>
   </view>

@@ -35,6 +35,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    url: app.globalData.url,
     myList:{},
     inputVal: "",
     id: "",
@@ -49,7 +50,7 @@ Page({
   loadMore () {
     //发送Ajax请求
     wx.request({
-      url: app.globalData.url + '/index',
+      url: this.data.url + '/index',
       success:(result)=>{
         // console.log(result)
         this.setData({

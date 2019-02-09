@@ -14,13 +14,14 @@ Page({
    */
   data: {
     id:'',
-    myList:[]
+    myList:[],
+    url: app.globalData.url
   },
   loadMore () {
     var id = this.data.id
     // console.log(id)
     wx.request({
-      url: app.globalData.url + '/poet?id='+id,
+      url: this.data.url + '/poet?id='+id,
       success:(result)=>{
         // console.log(result)
         this.setData({

@@ -4,13 +4,13 @@
   <view class='slider'>
     <swiper autoplay indicator-dots circular>
       <swiper-item wx:for="{{myList.carousel}}" wx:key="index">
-        <image src='http://127.0.0.1:3088/img/{{item.pic}}' lazy-load mode='aspectFill'></image>
+        <image src='{{url}}/img/{{item.pic}}' lazy-load mode='aspectFill'></image>
       </swiper-item>
     </swiper>
   </view>
   <view class='notice'>
     <text class='notice_a'>公告</text>
-    <text class='notice_b'>不给机会犯得上广泛空间的身份是</text>
+    <text class='notice_b'>好好学习，天天向上</text>
   </view>
   <view class='put'>
     <image class='imgs' src='../assets/img/search.png'></image>
@@ -21,7 +21,7 @@
   <!-- 九宫格 -->
   <view class='index_nav'>
     <view class='nav_item' wx:for="{{myList.poetItems}}" wx:key="index">
-      <image src='http://127.0.0.1:3088/img/{{item.img_url}}' lazy-load mode='aspectFill' bindtap='handlejump' data-id="{{item.lid}}"></image>
+      <image src='{{url}}/img/{{item.img_url}}' lazy-load mode='aspectFill' bindtap='handlejump' data-id="{{item.lid}}"></image>
       <text>{{item.names}}</text>
     </view>
   </view>

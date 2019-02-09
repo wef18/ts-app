@@ -9,13 +9,14 @@ Page({
   data: {
     kword: "",
     id: "",
-    myList: []
+    myList: [],
+    url: app.globalData.url
   },
   loadMore () {
     var kword = this.data.kword
     var id = this.data.id;
     wx.request({
-      url: app.globalData.url + '/search?kword='+kword+'&id='+id,
+      url: this.data.url + '/search?kword='+kword+'&id='+id,
       success: (result)=>{
         // console.log(result)
         this.setData({
